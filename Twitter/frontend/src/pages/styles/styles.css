@@ -1,0 +1,80 @@
+/* styles mainly used is the register and login components */
+
+.cont{
+    padding: 40px;
+    background-color: #191919;
+    width: 100%;
+    min-height: 100vh;
+    grid-column: 2/5
+}
+.secondary_cont{
+    padding: 20px 20px 6px 20px;
+    background-color: #404040;
+}
+.custom_title{
+    color: #484848
+}
+.custom_input{
+    background-color: #484848;
+    border: none;
+    border-bottom: 1.5px solid #667eea;
+    color: white;
+    width: 100%;
+    padding: 8px 5px 5px 5px
+}
+.custom_input:focus{
+    outline: none;
+    border-bottom: 1.5px solid white;
+}
+.custom_button:focus{
+    outline: none;
+}
+.custom_button, .custom_button_disabled{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background-color: #667eea;
+    color: white;
+    border-radius: 30px
+}
+.secondary_cont p{
+    color: white;
+    padding-top: 8px;
+    text-align: right;
+}
+.custom_link{
+    color: #667eea;
+    transition:0.3s
+}
+.custom_link:hover{
+    color: #5a70d3;
+    transition:0.3s;
+    text-decoration: none;
+}
+.custom_button:hover{
+    background-color: #5a70d3;
+    transition:0.3s;
+}
+
+/* styles for the update profile component  */
+
+.update_form{
+    height: 100vh;
+    background-color: #191919;
+    width: 70%;
+    padding-top: 50px;
+    margin: auto
+}
+
+/*------------------RESPONSIVE------------------*/
+@media (min-width: 320px) and (max-width: 481px){
+    .cont{
+        padding: 40px 10px 10px 10px;
+        grid-column:1/6
+    }
+    /*update profile */
+    .update_form{
+        width: 90%;
+        padding-top: 40px;
+    }
+}
